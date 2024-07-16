@@ -17,45 +17,86 @@
         <h1>Encuesta de Satisfacción del Servicio de Transporte</h1>
         <form id="surveyForm">
             <div class="form-group">
-                <label for="nombre">Nombre:</label>
+                <label for="nombre">Cliente:</label>
                 <input type="text" id="nombre" name="nombre" required>
             </div>
             <div class="form-group">
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="calidad">Calidad del Servicio:</label>
-                <select id="calidad" name="calidad" required>
+                <label for="conductor">Conductor que prestó el servicio:</label>
+                <select id="conductor" name="conductor" required>
                     <option value="">Seleccione</option>
-                    <option value="excelente">Excelente</option>
-                    <option value="bueno">Bueno</option>
-                    <option value="regular">Regular</option>
-                    <option value="malo">Malo</option>
+                    <option value="conductor1">Conductor 1</option>
+                    <option value="conductor2">Conductor 2</option>
+                    <option value="conductor3">Conductor 3</option>
+                    <!-- Agrega más opciones según sea necesario -->
                 </select>
             </div>
             <div class="form-group">
-                <label for="puntualidad">Puntualidad:</label>
-                <select id="puntualidad" name="puntualidad" required>
+                <label for="vehiculo">Vehículo que prestó el servicio:</label>
+                <select id="vehiculo" name="vehiculo" required>
                     <option value="">Seleccione</option>
-                    <option value="excelente">Excelente</option>
-                    <option value="bueno">Bueno</option>
-                    <option value="regular">Regular</option>
-                    <option value="malo">Malo</option>
+                    <option value="vehiculo1">Vehículo 1</option>
+                    <option value="vehiculo2">Vehículo 2</option>
+                    <option value="vehiculo3">Vehículo 3</option>
+                    <!-- Agrega más opciones según sea necesario -->
                 </select>
             </div>
             <div class="form-group">
-                <label for="amabilidad">Amabilidad del Personal:</label>
-                <select id="amabilidad" name="amabilidad" required>
+                <label for="horarios">El cumplimiento en los horarios y trayectos establecidos fue:</label>
+                <select id="horarios" name="horarios" required>
                     <option value="">Seleccione</option>
-                    <option value="excelente">Excelente</option>
-                    <option value="bueno">Bueno</option>
-                    <option value="regular">Regular</option>
-                    <option value="malo">Malo</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="comentarios">Comentarios o Sugerencias:</label>
+                <label for="normas">El cumplimiento de las normas de tránsito y Políticas de Uso de Cinturón de Seguridad, No uso de equipos móviles durante la conducción y límites de velocidad por parte del conductor fue:</label>
+                <select id="normas" name="normas" required>
+                    <option value="">Seleccione</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="uniforme">El porte del uniforme y atención por parte del conductor durante la prestación del servicio fue:</label>
+                <select id="uniforme" name="uniforme" required>
+                    <option value="">Seleccione</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="aseo">El aseo (Interior y Exterior) y estado de mantenimiento del vehículo es:</label>
+                <select id="aseo" name="aseo" required>
+                    <option value="">Seleccione</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="satisfaccion">Califique en general su grado de satisfacción con el servicio prestado por nuestra empresa:</label>
+                <select id="satisfaccion" name="satisfaccion" required>
+                    <option value="">Seleccione</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comentarios">Comentarios, sugerencias o felicitaciones:</label>
                 <textarea id="comentarios" name="comentarios"></textarea>
             </div>
             <button type="submit">Enviar</button>
@@ -71,5 +112,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
