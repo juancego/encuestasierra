@@ -24,9 +24,14 @@
                 <label for="conductor">Conductor que prestó el servicio:</label>
                 <select id="conductor" name="conductor" required>
                     <option value="">Seleccione</option>
-                    <option value="conductor1">Conductor 1</option>
-                    <option value="conductor2">Conductor 2</option>
-                    <option value="conductor3">Conductor 3</option>
+                    <option value="fredy">Fredy Orlando Pineda Moreno</option>
+                    <option value="jeferson">Jeferson Alexander González Tijaro</option>
+                    <option value="yhovany">Jose Yhovany Ruiz Soto</option>
+                    <option value="edgar">Edgar Eduardo Sierra Moreno</option>
+                    <option value="diego">Diego Andrés Sierra Moreno</option>
+                    <option value="leoguzman">Félix Leonardo Guzmán Garzón</option>
+                    <option value="andres">Andrés Ferney Salazar Urrea</option>
+
                     <!-- Agrega más opciones según sea necesario -->
                 </select>
             </div>
@@ -34,66 +39,89 @@
                 <label for="vehiculo">Vehículo que prestó el servicio:</label>
                 <select id="vehiculo" name="vehiculo" required>
                     <option value="">Seleccione</option>
-                    <option value="vehiculo1">Vehículo 1</option>
-                    <option value="vehiculo2">Vehículo 2</option>
-                    <option value="vehiculo3">Vehículo 3</option>
+                    <option value="kzv750">KZV 750</option>
+                    <option value="ljv152">LJV 152</option>
+                    <option value="lun364">LUN 364</option>
+                    <option value="nos709">NOS 709</option>
+                    <option value="nho082">NHO 082</option>
+                    <option value="nho140">NHO 140</option>
                     <!-- Agrega más opciones según sea necesario -->
                 </select>
             </div>
             <div class="form-group">
-                <label for="horarios">El cumplimiento en los horarios y trayectos establecidos fue:</label>
-                <select id="horarios" name="horarios" required>
-                    <option value="">Seleccione</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
+                <label>El cumplimiento en los horarios y trayectos establecidos fue:</label>
+                <div class="radio-group">
+                    <input type="radio" id="horarios1" name="horarios" value="1" required>
+                    <label for="horarios1">1</label>
+                    <input type="radio" id="horarios2" name="horarios" value="2">
+                    <label for="horarios2">2</label>
+                    <input type="radio" id="horarios3" name="horarios" value="3">
+                    <label for="horarios3">3</label>
+                    <input type="radio" id="horarios4" name="horarios" value="4">
+                    <label for="horarios4">4</label>
+                    <input type="radio" id="horarios5" name="horarios" value="5">
+                    <label for="horarios5">5</label>
+                </div>
             </div>
             <div class="form-group">
-                <label for="normas">El cumplimiento de las normas de tránsito y Políticas de Uso de Cinturón de Seguridad, No uso de equipos móviles durante la conducción y límites de velocidad por parte del conductor fue:</label>
-                <select id="normas" name="normas" required>
-                    <option value="">Seleccione</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
+                <label>El cumplimiento de las normas de tránsito y Políticas de Uso de Cinturón de Seguridad, No uso de equipos móviles durante la conducción y límites de velocidad por parte del conductor fue:</label>
+                <div class="radio-group">
+                    <input type="radio" id="normas1" name="normas" value="1" required>
+                    <label for="normas1">1</label>
+                    <input type="radio" id="normas2" name="normas" value="2">
+                    <label for="normas2">2</label>
+                    <input type="radio" id="normas3" name="normas" value="3">
+                    <label for="normas3">3</label>
+                    <input type="radio" id="normas4" name="normas" value="4">
+                    <label for="normas4">4</label>
+                    <input type="radio" id="normas5" name="normas" value="5">
+                    <label for="normas5">5</label>
+                </div>
             </div>
             <div class="form-group">
-                <label for="uniforme">El porte del uniforme y atención por parte del conductor durante la prestación del servicio fue:</label>
-                <select id="uniforme" name="uniforme" required>
-                    <option value="">Seleccione</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
+                <label>El porte del uniforme y atención por parte del conductor durante la prestación del servicio fue:</label>
+                <div class="radio-group">
+                    <input type="radio" id="uniforme1" name="uniforme" value="1" required>
+                    <label for="uniforme1">1</label>
+                    <input type="radio" id="uniforme2" name="uniforme" value="2">
+                    <label for="uniforme2">2</label>
+                    <input type="radio" id="uniforme3" name="uniforme" value="3">
+                    <label for="uniforme3">3</label>
+                    <input type="radio" id="uniforme4" name="uniforme" value="4">
+                    <label for="uniforme4">4</label>
+                    <input type="radio" id="uniforme5" name="uniforme" value="5">
+                    <label for="uniforme5">5</label>
+                </div>
             </div>
             <div class="form-group">
-                <label for="aseo">El aseo (Interior y Exterior) y estado de mantenimiento del vehículo es:</label>
-                <select id="aseo" name="aseo" required>
-                    <option value="">Seleccione</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
+                <label>El aseo (Interior y Exterior) y estado de mantenimiento del vehículo es:</label>
+                <div class="radio-group">
+                    <input type="radio" id="aseo1" name="aseo" value="1" required>
+                    <label for="aseo1">1</label>
+                    <input type="radio" id="aseo2" name="aseo" value="2">
+                    <label for="aseo2">2</label>
+                    <input type="radio" id="aseo3" name="aseo" value="3">
+                    <label for="aseo3">3</label>
+                    <input type="radio" id="aseo4" name="aseo" value="4">
+                    <label for="aseo4">4</label>
+                    <input type="radio" id="aseo5" name="aseo" value="5">
+                    <label for="aseo5">5</label>
+                </div>
             </div>
             <div class="form-group">
-                <label for="satisfaccion">Califique en general su grado de satisfacción con el servicio prestado por nuestra empresa:</label>
-                <select id="satisfaccion" name="satisfaccion" required>
-                    <option value="">Seleccione</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
+                <label>Califique en general su grado de satisfacción con el servicio prestado por nuestra empresa:</label>
+                <div class="radio-group">
+                    <input type="radio" id="satisfaccion1" name="satisfaccion" value="1" required>
+                    <label for="satisfaccion1">1</label>
+                    <input type="radio" id="satisfaccion2" name="satisfaccion" value="2">
+                    <label for="satisfaccion2">2</label>
+                    <input type="radio" id="satisfaccion3" name="satisfaccion" value="3">
+                    <label for="satisfaccion3">3</label>
+                    <input type="radio" id="satisfaccion4" name="satisfaccion" value="4">
+                    <label for="satisfaccion4">4</label>
+                    <input type="radio" id="satisfaccion5" name="satisfaccion" value="5">
+                    <label for="satisfaccion5">5</label>
+                </div>
             </div>
             <div class="form-group">
                 <label for="comentarios">Comentarios, sugerencias o felicitaciones:</label>
@@ -112,3 +140,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
