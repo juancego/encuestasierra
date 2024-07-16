@@ -17,7 +17,7 @@ document.getElementById('surveyForm').addEventListener('submit', function(event)
     const comentarios = document.getElementById('comentarios').value;
 
     // Envío de datos a Google Apps Script
-    const url = '1WGhJhNYr1MeW6YABeF0AMJPPHCnV4conoCtfWQWBqJxl9p7RuT5LEoE1'; // Reemplaza con la URL de tu script web de Google Apps Script
+    const url = 'https://script.google.com/macros/s/AKfycbxBb36mWhTmh1ltt3UEwUqc8Crsp_VhjHp6lxRfaIanbwrnM9wLLcVLjCNv7LulspxAKQ/exec'; // Reemplaza con la URL de tu script web de Google Apps Script
     const data = {
         nombre: nombre,
         conductor: conductor,
