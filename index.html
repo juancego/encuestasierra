@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="introContainer">
+        <h1>Bienvenido a nuestra Encuesta de Satisfacción</h1>
+        <p>Gracias por utilizar el servicio de Transporte Empresarial Sierra M SAS. Valoramos su opinión y nos gustaría conocer su experiencia para poder mejorar nuestros servicios.</p>
+        <button id="startSurveyButton">Comenzar Encuesta</button>
+    </div>
+
+    <div class="container" id="surveyContainer" style="display:none;">
         <h1>Encuesta de Satisfacción del Servicio de Transporte</h1>
         <form id="surveyForm">
             <div class="form-group">
@@ -54,8 +60,14 @@
             </div>
             <button type="submit">Enviar</button>
         </form>
-        <div id="responseMessage"></div>
     </div>
+
+    <div class="container" id="thankYouContainer" style="display:none;">
+        <h1>Gracias por su participación</h1>
+        <p>Gracias por completar la encuesta. Valoramos mucho su opinión.</p>
+        <button id="visitWebsiteButton">Visitar nuestra página web</button>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
