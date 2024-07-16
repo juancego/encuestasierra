@@ -1,3 +1,8 @@
+document.getElementById('startSurveyButton').addEventListener('click', function() {
+    document.getElementById('introContainer').style.display = 'none';
+    document.getElementById('surveyContainer').style.display = 'block';
+});
+
 document.getElementById('surveyForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -11,9 +16,10 @@ document.getElementById('surveyForm').addEventListener('submit', function(event)
     // Aquí puedes agregar la lógica para enviar los datos a tu servidor
     // Por ejemplo, usando fetch para enviar una solicitud POST
 
-    const responseMessage = document.getElementById('responseMessage');
-    responseMessage.textContent = 'Gracias por completar la encuesta. ¡Tus respuestas han sido enviadas!';
+    document.getElementById('surveyContainer').style.display = 'none';
+    document.getElementById('thankYouContainer').style.display = 'block';
+});
 
-    // Limpiar el formulario
-    document.getElementById('surveyForm').reset();
+document.getElementById('visitWebsiteButton').addEventListener('click', function() {
+    window.location.href = 'https://www.tu-sitio-web.com'; // Reemplaza con la URL de tu página web
 });
