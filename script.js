@@ -7,23 +7,56 @@ document.getElementById('surveyForm').addEventListener('submit', function(event)
     event.preventDefault();
 
     const nombre = document.getElementById('nombre').value;
-    const email = document.getElementById('email').value;
     const conductor = document.getElementById('conductor').value;
     const vehiculo = document.getElementById('vehiculo').value;
-    const horarios = document.getElementById('horarios').value;
-    const normas = document.getElementById('normas').value;
-    const uniforme = document.getElementById('uniforme').value;
-    const aseo = document.getElementById('aseo').value;
-    const satisfaccion = document.getElementById('satisfaccion').value;
+    const horarios = document.querySelector('input[name="horarios"]:checked').value;
+    const normas = document.querySelector('input[name="normas"]:checked').value;
+    const uniforme = document.querySelector('input[name="uniforme"]:checked').value;
+    const aseo = document.querySelector('input[name="aseo"]:checked').value;
+    const satisfaccion = document.querySelector('input[name="satisfaccion"]:checked').value;
     const comentarios = document.getElementById('comentarios').value;
 
-    // Aquí puedes agregar la lógica para enviar los datos a tu servidor
-    // Por ejemplo, usando fetch para enviar una solicitud POST
+    // Envío de datos a Google Apps Script
+    const url = 'AKfycbyCYuHF_2jzlH27J9UAPmfDlCMyWJjwq3YMJoSDOAtV'; // Reemplaza con la URL de tu script web de Google Apps Script
+    const data = {
+        nombre: nombre,
+        conductor: conductor,
+        vehiculo: vehiculo,
+        horarios: horarios,
+        normas: normas,
+        uniforme: uniforme,
+        aseo: aseo,
+        satisfaccion: satisfaccion,
+        comentarios: comentarios
+    };
 
-    document.getElementById('surveyContainer').style.display = 'none';
-    document.getElementById('thankYouContainer').style.display = 'block';
+    fetch(url, {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response => {
+        if (response.ok) {
+            return response.text();
+        }
+        throw new Error('Error en la solicitud.');
+    })
+    .then(data => {
+        console.log('Respuesta del servidor:', data);
+        // Aquí podrías mostrar un mensaje de éxito o realizar otras acciones
+        document.getElementById('surveyContainer').style.display = 'none';
+        document.getElementById('thankYouContainer').style.display = 'block';
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        // Aquí podrías mostrar un mensaje de error si la solicitud falla
+    });
 });
 
 document.getElementById('visitWebsiteButton').addEventListener('click', function() {
-    window.open('https://www.tu-sitio-web.com', '_blank'); // Reemplaza con la URL de tu página web
+    // Redirigir al usuario a otra página web
+    window.open('https://juancego.github.io/sierrapage/#', '_blank');
 });
+
