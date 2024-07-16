@@ -42,4 +42,77 @@ p {
     padding: 10px;
     box-sizing: border-box;
     border: 1px solid #ccc;
-    border
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #4cae4c;
+}
+
+#responseMessage {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #5cb85c;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio-group input {
+    display: none;
+}
+
+.radio-group label {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.radio-group input:checked + label {
+    background-color: #5cb85c;
+    color: white;
+    border-color: #5cb85c;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        margin-top: 20px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 8px;
+    }
+}
