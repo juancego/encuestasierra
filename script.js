@@ -21,5 +21,5 @@ document.getElementById('surveyForm').addEventListener('submit', function(event)
 });
 
 document.getElementById('visitWebsiteButton').addEventListener('click', function() {
-    window.location.href = 'https://www.tu-sitio-web.com'; // Reemplaza con la URL de tu página web
+    window.location.href = 'https://juancego.github.io/sierrapage/#'; // Reemplaza con la URL de tu página web
 });
