@@ -8,9 +8,13 @@ document.getElementById('surveyForm').addEventListener('submit', function(event)
 
     const nombre = document.getElementById('nombre').value;
     const email = document.getElementById('email').value;
-    const calidad = document.getElementById('calidad').value;
-    const puntualidad = document.getElementById('puntualidad').value;
-    const amabilidad = document.getElementById('amabilidad').value;
+    const conductor = document.getElementById('conductor').value;
+    const vehiculo = document.getElementById('vehiculo').value;
+    const horarios = document.getElementById('horarios').value;
+    const normas = document.getElementById('normas').value;
+    const uniforme = document.getElementById('uniforme').value;
+    const aseo = document.getElementById('aseo').value;
+    const satisfaccion = document.getElementById('satisfaccion').value;
     const comentarios = document.getElementById('comentarios').value;
 
     // Aquí puedes agregar la lógica para enviar los datos a tu servidor
@@ -21,5 +25,5 @@ document.getElementById('surveyForm').addEventListener('submit', function(event)
 });
 
 document.getElementById('visitWebsiteButton').addEventListener('click', function() {
-    window.open('https://juancego.github.io/sierrapage/#', '_blank'); // Reemplaza con la URL de tu página web
+    window.open('https://www.tu-sitio-web.com', '_blank'); // Reemplaza con la URL de tu página web
 });
